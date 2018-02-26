@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>An Introduction to Statistical and Data Sciences via R</title>
   <meta name="description" content="An open-source and fully-reproducible electronic textbook bridging the gap between traditional introductory statistics and data science courses.">
-  <meta name="generator" content="bookdown 0.5.15 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7.1 and GitBook 2.6.7">
 
   <meta property="og:title" content="An Introduction to Statistical and Data Sciences via R" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Chester Ismay and Albert Y. Kim">
 
 
-<meta name="date" content="2018-01-22">
+<meta name="date" content="2018-02-26">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -623,16 +623,16 @@ regression_points</code></pre></div>
 <pre><code># A tibble: 463 x 6
       ID score   age gender score_hat residual
    &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;      &lt;dbl&gt;    &lt;dbl&gt;
- 1     1  4.70  36.0 female      4.25   0.448 
- 2     2  4.10  36.0 female      4.25  -0.152 
- 3     3  3.90  36.0 female      4.25  -0.352 
- 4     4  4.80  36.0 female      4.25   0.548 
- 5     5  4.60  59.0 male        4.20   0.399 
- 6     6  4.30  59.0 male        4.20   0.0990
- 7     7  2.80  59.0 male        4.20  -1.40  
- 8     8  4.10  51.0 male        4.23  -0.133 
- 9     9  3.40  51.0 male        4.23  -0.833 
-10    10  4.50  40.0 female      4.18   0.318 
+ 1     1  4.70   36. female      4.25   0.448 
+ 2     2  4.10   36. female      4.25  -0.152 
+ 3     3  3.90   36. female      4.25  -0.352 
+ 4     4  4.80   36. female      4.25   0.548 
+ 5     5  4.60   59. male        4.20   0.399 
+ 6     6  4.30   59. male        4.20   0.0990
+ 7     7  2.80   59. male        4.20  -1.40  
+ 8     8  4.10   51. male        4.23  -0.133 
+ 9     9  3.40   51. male        4.23  -0.833 
+10    10  4.50   40. female      4.18   0.318 
 # ... with 453 more rows</code></pre>
 <p>First the histogram:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(regression_points, <span class="kw">aes</span>(<span class="dt">x =</span> residual)) <span class="op">+</span>
@@ -695,10 +695,11 @@ gitbook.start({
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",

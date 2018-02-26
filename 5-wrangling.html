@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>An Introduction to Statistical and Data Sciences via R</title>
   <meta name="description" content="An open-source and fully-reproducible electronic textbook bridging the gap between traditional introductory statistics and data science courses.">
-  <meta name="generator" content="bookdown 0.5.15 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.7.1 and GitBook 2.6.7">
 
   <meta property="og:title" content="An Introduction to Statistical and Data Sciences via R" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Chester Ismay and Albert Y. Kim">
 
 
-<meta name="date" content="2018-01-22">
+<meta name="date" content="2018-02-26">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -1381,7 +1381,7 @@ Figure 5.8: Diagram of inner join from R for Data Science
 <span class="st">  </span><span class="kw">inner_join</span>(airports, <span class="dt">by =</span> <span class="kw">c</span>(<span class="st">&quot;dest&quot;</span> =<span class="st"> &quot;faa&quot;</span>)) <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">rename</span>(<span class="dt">airport_name =</span> name)
 <span class="kw">View</span>(named_dests)</code></pre></div>
-<p>In case you didn’t know, <code>&quot;ORD&quot;</code> is the airport code of Chicago O’Hare airport and <code>&quot;FLL&quot;</code> is the main airport in Fort Lauderdale, Florida, which we can now see in our <code>named_freq_dests</code> data frame.</p>
+<p>In case you didn’t know, <code>&quot;ORD&quot;</code> is the airport code of Chicago O’Hare airport and <code>&quot;FLL&quot;</code> is the main airport in Fort Lauderdale, Florida, which we can now see in our <code>named_dests</code> data frame.</p>
 <div class="learncheck">
 <p>
 <strong><em>Learning check</em></strong>
@@ -1484,7 +1484,7 @@ flights_time</code></pre></div>
 <h2><span class="header-section-number">5.10</span> Conclusion</h2>
 <div id="review-questions-2" class="section level3">
 <h3><span class="header-section-number">5.10.1</span> Review questions</h3>
-<p>Review questions have been designed using the <code>fivethirtyeight</code> R package <span class="citation">(Ismay and Chunn 2017)</span> with links to the corresponding FiveThirtyEight.com articles in our free DataCamp course <strong>Effective Data Storytelling using the <code>tidyverse</code></strong>. The material in this chapter is covered in the chapters of the DataCamp course available below:</p>
+<p>Review questions have been designed using the <code>fivethirtyeight</code> R package <span class="citation">(Kim, Ismay, and Chunn 2018)</span> with links to the corresponding FiveThirtyEight.com articles in our free DataCamp course <strong>Effective Data Storytelling using the <code>tidyverse</code></strong>. The material in this chapter is covered in the chapters of the DataCamp course available below:</p>
 <ul>
 <li><a href="https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/filtering-grouping-summarizing">Filtering, Grouping, &amp; Summarizing</a></li>
 <li><a href="https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/dplyr-review-8?ex=1">dplyr Review</a></li>
@@ -1539,10 +1539,11 @@ gitbook.start({
 "facebook": true,
 "twitter": true,
 "google": false,
+"linkedin": false,
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
